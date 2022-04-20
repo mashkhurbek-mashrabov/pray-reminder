@@ -19,6 +19,6 @@ from django.urls import path
 from bot.webhook_handler import webhook_handler
 
 urlpatterns = [
-    path('/reminder/admin/', admin.site.urls),
+    path('', admin.site.urls),
     path('reminder/bot/', webhook_handler),
 ]
